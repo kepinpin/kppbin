@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#my kind of ls
+alias l='ls -1hltr'
+alias ll='ls -1Ahltr --full-time'
+
+
+#source: https://askubuntu.com/questions/69556/how-to-check-battery-status-using-terminal
+alias battery='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"'
